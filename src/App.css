@@ -1,0 +1,137 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Container for vertical scroll snapping */
+.scroll-container {
+  height: 100vh;             /* full viewport */
+  overflow-y: scroll;        /* enable scrolling */
+  scroll-snap-type: y mandatory; /* vertical snap */
+  scrollbar-width: none;
+}
+
+/* Each section fills viewport */
+.section {
+  height: 100vh;             /* full screen height */
+  scroll-snap-align: start;  /* snap to top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Different backgrounds for demo */
+.home {
+  background-color: #000000; 
+}
+.about { background-color: #000000; }
+.projects { background-color: #000000; }
+
+/* Headings and paragraphs */
+.section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.5rem;
+}
+
+.projects {
+  background-color: #000000; /* greenish accent for section */
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 250px; /* smaller max width */
+  padding: 1rem;    /* slightly smaller padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.project-image {
+  width: 100%;
+  height: 140px;   /* limit height */
+  object-fit: cover; /* crop nicely without stretching */
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #a3e635;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #d9f99d;
+}
