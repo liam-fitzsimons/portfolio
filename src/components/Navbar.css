@@ -1,0 +1,57 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+  position: fixed; /* sticks at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #333; /* dark background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+  z-index: 1000; /* ensures it stays above content */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional shadow */
+}
+
+/* Nav links container */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link styles */
+.navbar-links li {
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-links li button {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-decoration: none;
+  background: #727171;;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  outline: none;
+}
+
+.navbar-links li button:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-decoration: none;
+  background: #61DAFB;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+

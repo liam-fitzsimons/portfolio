@@ -1,5 +1,4 @@
 import DownloadCVButton from '../components/DownloadCVButton';
-
 function Home() {
   return (
     <section className="section home">
@@ -9,5 +8,4 @@ function Home() {
     </section>
   );
 }
-
 export default Home;
