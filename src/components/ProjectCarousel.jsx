@@ -22,11 +22,15 @@ export default function ProjectCarousel({ projects }) {
                     <img
                         src={project.image}
                         alt={project.title}
-                        style={{ width: '100%', maxWidth: '400px', height: 'auto', maxHeight: '400px',borderRadius: '4px',objectFit: 'contain' }}
+                        style={{ width: '100%', maxWidth: '400px', height: 'auto', maxHeight: '400px', borderRadius: '4px', objectFit: 'contain' }}
+                        // style={{ width: '100%', height: '20vh', borderRadius: '4px', objectFit: 'contain' }}
                     />
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
-                    {project.link && <a href={project.link}>View Project</a>}
+                    {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer'>View Project Demo</a>}
+                    <br/><br/>
+                    {project.github && <a href={project.github} target='_blank' rel='noopener noreferrer'>View Github Repository</a>}
+                    <br/><br/>
                 </SwiperSlide>
             ))}
         </Swiper>

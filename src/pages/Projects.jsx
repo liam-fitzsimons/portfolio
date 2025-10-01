@@ -1,34 +1,38 @@
 // import ProjectCard from '../components/ProjectCard';
 import ProjectCarousel from '../components/ProjectCarousel';
 import project1Img from '../assets/todo.png';
-import project2Img from '../assets/react.svg';
-import project3Img from '../assets/react.svg';
+import project2Img from '../assets/escooter.png';
+import project3Img from '../assets/dcr.png';
 import project4Img from '../assets/react.svg';
 
 const projects = [
     {
+        title: "AI to capture E-Scooter Riding Thieves",
+        description: "AI",
+        image: project2Img,
+        link: "https://www.youtube.com/watch?v=eJ805C6D1Os",
+        github: "https://github.com/uoa-compsci399-s1-2024/capstone-project-2024-s1-sentry-team-8.git"
+    },
+    {
+        title: "Debt Coverage Analysis (Finance Company Project)",
+        description: "App that allows for user-friendly analysis for credit assessment",
+        image: project3Img,
+        link: "https://debt-coverage-analysis.vercel.app/",
+        github: "https://github.com/liam-fitzsimons/debt-coverage-analysis.git"
+    },
+    {
         title: "To Do List",
         description: "My first project",
         image: project1Img,
-        link: "https://todo-frontend-theta-bice.vercel.app/"
+        link: "https://todo-frontend-theta-bice.vercel.app/",
+        github: "https://github.com/liam-fitzsimons/todo-frontend.git"
     },
     {
-        title: "Project Two",
+        title: "AI to capture E-Scooter Riding Thieves",
         description: "My second project",
         image: project2Img,
-        link: "https://example.com/project2"
-    },
-    {
-        title: "Project Three",
-        description: "My Third project",
-        image: project2Img,
-        link: "https://example.com/project3"
-    },
-    {
-        title: "Project Four",
-        description: "My fourth project",
-        image: project2Img,
-        link: "https://example.com/project4"
+        link: "https://github.com/uoa-compsci399-s1-2024/capstone-project-2024-s1-sentry-team-8.git",
+        github: "https://github.com/uoa-compsci399-s1-2024/capstone-project-2024-s1-sentry-team-8.git"
     }
 ];
 
